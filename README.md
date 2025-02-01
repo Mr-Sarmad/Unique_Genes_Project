@@ -1,23 +1,24 @@
-# Unique Genes Project
+# Unique Coding Sequences Project
 
 ## Introduction
-This project is focused on identifying unique genes from biological datasets. It includes scripts for data processing, sequence comparison, and local BLAST analysis.
+This project focuses on identifying unique coding sequences from a target genome by comparing it with 10 reference genomes. The process involves annotation, sequence conversion, and local BLAST analysis to identify sequences that are unique to the target genome.
 
 ## Features
-- Identifies unique genes from genomic datasets.
-- Uses BLAST for sequence alignment.
-- Creates and queries a local BLAST database.
-- Automates data preprocessing and analysis.
+- Annotates the **target genome** and **10 reference genomes**.
+- Converts all annotated genomes into **nucleotide sequences**.
+- Adds reference genomes and performs **local BLAST searches**.
+- Compares the sequences and identifies **unique coding sequences**.
+
 
 ## Repository Structure
 ```
-Unique_Genes_Project/
-│-- data/               # Raw and processed data files
-│-- scripts/            # Python scripts for analysis
-│-- results/            # Output and reports
-│-- README.md           # Project documentation
-│-- requirements.txt    # Dependencies
-│-- Unique_genes.ipynb  # Jupyter Notebook for analysis
+Unique_Coding_Sequences_Project/
+│-- data/ # Raw and processed data files
+│-- scripts/ # Python scripts for analysis
+│-- results/ # Output and reports
+│-- README.md # Project documentation
+│-- requirements.txt # Dependencies
+│-- Unique_coding_sequences.ipynb # Jupyter Notebook for analysis
 ```
 
 ## Requirements
@@ -29,16 +30,28 @@ pip install biopython pandas numpy
 ## Cloning the Repository
 Clone the repository from GitHub:
 ```bash
-git clone https://github.com/Mr-Sarmad/Unique_Genes_Project.git
-cd Unique_Genes_Project
+git clone https://github.com/Mr-Sarmad/Unique_Coding_Sequences_Project.git
+cd Unique_Coding_Sequences_Project
 ```
 
 ## Running the Project
 1. Open the Jupyter Notebook:
 ```bash
-jupyter notebook Unique_genes.ipynb
+jupyter notebook Unique_coding_sequences.ipynb
 ```
 2. Follow the steps in the notebook to process data and analyze unique genes.
+
+### Steps for Identifying Unique Coding Sequences
+## 1. Annotating Genomes
+First, annotate the target genome to identify all coding regions.
+Next, annotate 10 reference genomes to perform comparisons.
+## 2. Converting Genomes into Nucleotide Sequences
+After annotation, convert the identified coding sequences of the target genome and reference genomes into nucleotide sequences.
+## 3. Adding Reference Genomes and Running Local BLAST
+Add the reference genomes and create a local BLAST database for sequence comparison.
+Run BLAST locally to align the target genome sequences against the reference genomes.
+## 4. Comparing Sequences and Identifying Unique Sequences
+Compare the sequences using BLAST results to identify coding sequences that are unique to the target genome.
 
 ## BLAST Setup
 BLAST (Basic Local Alignment Search Tool) is used for sequence alignment.
